@@ -12,8 +12,7 @@
 - CONFIG GLOBAL REPO
 $ git config --global user.name “nama_user”
 $ git config --global user.email “nama_user”
-
-![Gitconfig](C:/Users/user/Desktop/New%20folder/Capture11.PNG)
+- ![Gitconfig](C:/Users/user/Desktop/New%20folder/Capture11.PNG)
 ## Membuat Repo lokal
 - Buka direktory aktif, misal: d:\labs_pemrograman1 (buka menggunakan Windows Explorer) 
 - klik kanan pada direktory aktif tersebut, dan pilih menu Git Bash, sehingga muncul git bash command
@@ -21,8 +20,7 @@ $ git config --global user.email “nama_user”
 - $ mkdir latihan1 $ cd latihan1
 - Sehingga terbentuk satu direktori baru dibawahnya, selanjutnya masuk kedalam direktori tersebut dengan perintah cd (change directory)
 - direktory aktif menjadi: d:\labs_pemrograman1\latihan1
-
-![repolokal](C:/Users/user/Desktop/New%20folder/Capture12.PNG)File README.md berhasil dibuat. 
+- ![repolokal](C:/Users/user/Desktop/New%20folder/Capture12.PNG)File README.md berhasil dibuat. 
 
 ## Membuat repo lokal 1.2
 - jalankan perintah git init,untuk membuat repo lokal
