@@ -14,34 +14,55 @@ $ git config --global user.name “nama_user”
 $ git config --global user.email “nama_user”
 
 ![Gitconfig](C:/Users/user/Desktop/New%20folder/Capture11.PNG)
+## Membuat Repo lokal
+- Buka direktory aktif, misal: d:\labs_pemrograman1 (buka menggunakan Windows Explorer) 
+- klik kanan pada direktory aktif tersebut, dan pilih menu Git Bash, sehingga muncul git bash command
+- Buat direktory project praktikum pertama dengan nama latihan1
+- $ mkdir latihan1 $ cd latihan1
+- Sehingga terbentuk satu direktori baru dibawahnya, selanjutnya masuk kedalam direktori tersebut dengan perintah cd (change directory)
+- direktory aktif menjadi: d:\labs_pemrograman1\latihan1
 
-## Perintah dasar
+![repolokal](C:/Users/user/Desktop/New%20folder/Capture12.PNG)File README.md berhasil dibuat. 
 
-1.git init yaitu perintah untuk membuat respitory local
-  1a.setelah mengatur tata letak dimana kita akan menyimpan respitory baru lah kita membuat respitory dengan menulis =$ git init
+## Membuat repo lokal 1.2
+- jalankan perintah git init,untuk membuat repo lokal
+- $ git init
+- Repository baru berhasil di inisialisasi, dengan terbentuknya satu direktori hidden dengan nama .git 
+- Pada direktori tersebut, semua perubahan pada working directory akan disimpan.
 
-![Gitinit](C:/Users/user/Desktop/New%20folder/Capture1.PNG)
+## Menambahkan File baru pada repository
+- Untuk membuat file dapat menggunakan text editor, lalu menyimpan filenya pada direktori aktif (repository) 
+- disini kita akan coba buat satu file bernama README.md (text file)
+- $ echo “#Latihan 1” >> README.md
+- File README.md berhasil dibuat. 
+![Filebaru](C:/Users/user/Desktop/New%20folder/Capture13.PNG)
 
-2.git add yaitu perintah untuk untuk menambah file project yang mau di upload sebelum di commit, tanda titik setelah kata “add” pada perintah tersebut adalah keseluruhan file dan folder project tersebut, saat awal upload bisa menggunakan perintah tersebut.
-
+## Menambahkan File baru pada repository
+- Untuk menambahkan file yang baru saja dibuat tersebut gunakan perintah git add.
+- File README.md berhasil ditambahkan. 
+- $ git add README.md
 ![Gitadd](C:/Users/user/Desktop/New%20folder/Capture3.PNG)
 
-3.git commit yaitu perintah untuk menyimpan perubahan kedalam database git.untuk menambah keterangan/status perubahaan saat upload ke repo online, untuk memasukkan keterangan tersebut setelah “git commit -m” ditambah tanda petik lalu komentar
-
+## Commit (Menyimpan perubahan ke database)
+- Untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah git commit -m “komentar commit”
+- Perubahan berhasil disimpan.
+- $ git commit -m “File pertama saya”
 ![gitcommit](C:/Users/user/Desktop/New%20folder/Capture4.PNG)
-
-4.git remote add origin yaitu perintah untuk meng-setting remote origin dari repo online, repo online bisa dilihat pada link yang tersedia di bagian atas Project dengan format “.git”, diperlukan ini untuk mengakses ke repo tersebut sehingga kita bisa melakukan apapun di repo online tersebut.
-
+## Membuat repository server
+- Server reopsitory yang akan kita gunakan adalah http://github.com 
+- Anda harus membuat akun terlebih dahulu. 
+- Pada laman github, klik tombol start a project dan Dari menu (icon +) klik New Repository
+## Menambahkan Remote Repository
+- Remote Repository merupakan repository server yang akan digunakan untuk menyimpan setiap perubahan pada local repository, sehingga dapat diakses oleh banyak user. 
+- Untuk menambahkan remote repository server, gunakan perintah git remote add origin [url]
+- $ git remote add origin https://github.com/.........
 ![gitremoteaddorigin](C:/Users/user/Desktop/New%20folder/Capture6.PNG)
-
-5.git push origin “nama branch” yaitu perintah untuk mengupload file yang ada pada repo lokal ke repo online yang diletakkan pada branch yang sudah tersedia di repo online.
-
+## Push (Mengirim perubahan ke server)
+- Untuk mengirim perubahan pada local repository ke server gunakan perintah git push.
+- Perintah ini akan meminta memasukkan username dan password pada akun github.com
+- $ git push -u origin master
 ![gitpushorigin](C:/Users/user/Desktop/New%20folder/Capture7.PNG)
-
-6. git clone [url], perintah untuk membuat working directory yang diambil dari repositry server alias mendownload file tersebut.
-
-![gitclone](C:/Users/user/Desktop/New%20folder/Capture8.PNG)
-
-## Membuat Repo lokal
--Buka direktory aktif, misal: d:\labs_pemrograman1 (buka menggunakan Windows Explorer) 
--
+## Clone Repository
+- Clone repository, pada dasarnya adalah meng-copy repository server dan secara otomatis membuat satu direktory sesuai dengan nama repositorynya (working directory).
+- Untuk melakukan cloning, gunakan perintah git clone [url]
+![clone](C:/Users/user/Desktop/New%20folder/Capture8.PNG)
