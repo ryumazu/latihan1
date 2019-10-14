@@ -1,4 +1,4 @@
-# latihan 1
+﻿# latihan 1
 ## Tutorial Cara menggunakan git
 ## Instalasi Git
 - pertama download terlebih dahulu git nya di (git-scm.com)
@@ -12,7 +12,7 @@
 - CONFIG GLOBAL REPO
 $ git config --global user.name “nama_user”
 $ git config --global user.email “nama_user”
-- ![Gitconfig](C:/Users/user/Desktop/New%20folder/Capture11.PNG)
+- ![Gitconfig](https://github.com/ryumazu/latihan1/blob/master/gambar/Capture1.PNG?raw=true)
 ## Membuat Repo lokal
 - Buka direktory aktif, misal: d:\labs_pemrograman1 (buka menggunakan Windows Explorer) 
 - klik kanan pada direktory aktif tersebut, dan pilih menu Git Bash, sehingga muncul git bash command
