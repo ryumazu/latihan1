@@ -84,3 +84,4 @@ $ echo “#Latihan 1” >> README.md
 - Untuk melakukan cloning, gunakan perintah git clone [url]
 
 ![clone](https://github.com/ryumazu/latihan1/blob/master/gambar/Capture8.PNG?raw=true)
+latihan 2
